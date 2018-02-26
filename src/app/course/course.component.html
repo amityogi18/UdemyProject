@@ -1,0 +1,13 @@
+<p>
+  Courses !!
+</p>
+
+<h2>{{ text | summary:10 }}
+</h2>
+
+{{ course.title | uppercase |lowercase }} <br/>
+{{ course.rating | number: '1.2-2' }} <br/>
+{{ course.students | number  }} <br/>
+{{ course.price | currency:  'AUD': true : '3.2-2' }} <br/>
+{{ course.releaseDate | date: 'shortDate' }}
+
