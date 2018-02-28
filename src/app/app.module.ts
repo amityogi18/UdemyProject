@@ -15,6 +15,7 @@ import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PostComponent } from './post/post.component';
 import { DataTableComponent } from './data-table/data-table.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { DataTableComponent } from './data-table/data-table.component';
     SummaryPipe,
     FavoriteComponent,
     PostComponent,
-    DataTableComponent
+    DataTableComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
