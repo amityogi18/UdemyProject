@@ -5,7 +5,10 @@
       <div class="col-md-4">
         <section class="login-form">
           <form #f="ngForm" (ngSubmit)="submitLogin(f)">
-            <img src="http://i.imgur.com/RcmcLv4.png" class="img-responsive" alt="" />
+            <div class="form-group">
+              <img src="http://i.imgur.com/RcmcLv4.png" class="img-responsive" alt="" />
+            </div>
+
             <div class="col-md-4">
               <label>
                 <input ngModel value="student" type="radio" name="optradio">Student</label>
@@ -18,8 +21,13 @@
               <label>
                 <input ngModel value="admin" type="radio" name="optradio">Admin</label>
             </div>
-            <input type="email" name="email" placeholder="Email"  class="form-control input-lg" ngModel #email="ngModel" required/>
-            <input type="password" class="form-control input-lg" id="password" placeholder="Password" ngModel #password="ngModel" required name="password" />
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" class="form-control input-lg" ngModel #email="ngModel" required/>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control input-lg" id="password" placeholder="Password" ngModel #password="ngModel" required
+                name="password" />
+            </div>
             <div class="pwstrength_viewport_progress"></div>
             <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Log in</button>
           </form>
